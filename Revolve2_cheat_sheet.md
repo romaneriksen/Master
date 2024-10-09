@@ -9,6 +9,37 @@ body = BodyV2() # Creates the center core
 body.core_v2.left_face.bottom = ActiveHingeV2(RightAngles.DEG_0) # Attatches a hinge to the core on the left?
 body.core_v2.left_face.bottom = BrickV2(RightAngles.DEG_0) # Attatches a brick to the core on the left?
 ```
+# Custom Terrain
+- One can create a custom terrain for a simulation scene
+- A terrain is a collection of static geometries
+```
+def make_custom_terrain() -> Terrain:
+    """
+    Create a custom terrain.
+    :returns: The created terrain.
+    """
+    return Terrain(
+        static_geometry=[
+            GeometryPlane(
+                pose=Pose(position=Vector3(), orientation=Quaternion()),
+                mass=0.0,
+                size=Vector3([20.0, 20.0, 0.0]),
+                texture=Checker(
+                    primary_color=Color(170, 170, 180, 255),
+                    secondary_color=Color(150, 150, 150, 255),
+                    map_type=MapType.MAP2D,
+                ),
+            ),
+            GeometryBox(
+                pose=Pose(position=Vector3([1.0, 0.0, 0.1]), orientation=Quaternion()),
+                mass=0.0,
+                texture=Flat(primary_color=Color(0, 255, 0, 255)),
+                aabb=AABB(size=Vector3([0.5, 0.5, 0.2])),
+            )
+        ]
+    )
+```
+
 # main() method to run the simulation
 ```
 # output for the simulation
