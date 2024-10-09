@@ -12,6 +12,7 @@ body.core_v2.left_face.bottom = BrickV2(RightAngles.DEG_0) # Attatches a brick t
 # Custom Terrain
 - One can create a custom terrain for a simulation scene
 - A terrain is a collection of static geometries
+- The following function creates a flat terrain with a box
 ```python
 def make_custom_terrain() -> Terrain:
     """
