@@ -1,18 +1,18 @@
 # Create a robot body
 - A modular robot follows a tree structure, with a "center core" as the parent node
-```
+```python
 body = BodyV2() # Creates the center core
 ```
 - There are two different parts that one can attach to the core, a hinge and a brick, and these can also be attached to each other.
 - These modules can also be attatched in a rotated fashion
-```
+```python
 body.core_v2.left_face.bottom = ActiveHingeV2(RightAngles.DEG_0) # Attatches a hinge to the core on the left?
 body.core_v2.left_face.bottom = BrickV2(RightAngles.DEG_0) # Attatches a brick to the core on the left?
 ```
 # Custom Terrain
 - One can create a custom terrain for a simulation scene
 - A terrain is a collection of static geometries
-```
+```python
 def make_custom_terrain() -> Terrain:
     """
     Create a custom terrain.
@@ -41,7 +41,7 @@ def make_custom_terrain() -> Terrain:
 ```
 
 # main() method to run the simulation
-```
+```python
 # output for the simulation
 setup_logging()
 
