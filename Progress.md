@@ -25,6 +25,7 @@
 - Change the objective fitness function from xy-displacement to either x- or y-displacement
 
 ## Week 47
+- Adapt the Mujoco configuration files to track the robot by double-clicking on one of its components before starting the rerun simulation displaying how the robot performed. 
 
 ## Week 48
 
