@@ -3,7 +3,7 @@
 ## Week 41
 - Installed Revolve2 - a framework for simulating modular robots.
 - Get to know how Revolve2 works by playing with examples.
-- Reading the code to understand how to set up my own simulations.
+- Reading the code to understand how to set up simulations.
 
 ## Week 42
 - Set up a workspace environment on a remote computer for faster simulations.
