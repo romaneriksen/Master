@@ -1,11 +1,31 @@
 # Progress for master thesis
 
 ## Week 41
-### Monday
-### Tuesday
 - Installed Revolve2 - a framework for simulating modular robots
 - Get to know how Revolve2 works by playing with examples
-### Wednesday
-- Continue to play with examples in Revolve2, reading the code to understand how to set up my own simulations
-### Thursday
-### Friday
+- Reading the code to understand how to set up my own simulations
+
+## Week 42
+- Set up a workspace environment on a remote computer for faster simulations
+- Run some of the demanding example simulations to understand what Revolve2 produces
+
+## Week 43
+- Combine two different revolve example programs into one single program that combines evolution and learning
+- Use multiNEAT to perform neuroevolution searching for good genomes representing a modular robot. here, MultiNEAT implements CPPNs (Compositional Pattern Producing Network) as generative encodings and evolves them using genetic algorithms
+- The robots represented by the CPPNs are then sent as input a learner method that creates a brain from the robot's structure. The brains consist of multiple CPGs with connections between each other. The number of connections and CPGs are decided based on how many active hinge modules exist in the robot, and if the active hinge has any nearby neighbor modules that also are active hinges.
+- The learner method is a CMA-ES (Covariance Matrix Adaptation Evolution Strategy,
+
+## Week 44
+- Experimen
+
+## Week 45
+
+## Week 46
+
+## Week 47
+
+## Week 48
+
+## Week 49
+
+
