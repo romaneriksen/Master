@@ -29,6 +29,6 @@
 ## Week 48
 
 ## Week 49
-- Implement inheritance of brain parameters. Offspring can now inherit values for their controller from their parents. 
+- Implement inheritance of brain parameters. Offspring can now inherit values for their controller from their parents. If a CPG exists in the same grid position for both parent and offspring, the offspring can inherit the values. 
 
 
